@@ -20,7 +20,7 @@ header{
   padding-left: 40px;
 }
 
-.nav_links li{
+.nav_links > li{
   display: inline-block;
   padding: 0 15px;
 }
@@ -67,7 +67,9 @@ section{
   
 }
 h1{
-  font-size: 80px;
+  font-size: 60px;
+  font-weight: bolder;
+  margin-top: 25px;
 }
 p{
   margin-top: 7vh;
@@ -88,7 +90,7 @@ p{
   
 }
 .logos img{
-  margin: 10vh 10px;
+  margin: 8vh 10px;
 }
 
 #audiophile {
@@ -101,5 +103,20 @@ p{
   left: 1px;
 }
 .dropdown_menu {
-  z-index: 10;
+  display: none;
+  position: absolute;
+  padding: 10px 15px;
+  margin-left: -40px;
+  margin-top: 20px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+}
+
+.dropdown_menu li{
+  list-style: none;
+  margin-top: 10px;
+  
+}
+.features:hover .dropdown_menu{
+  display: block;
 }
