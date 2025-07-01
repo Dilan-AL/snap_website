@@ -17,36 +17,47 @@
 </head>
 <body>
   <header>
-      <img src="images/logo.svg" alt="logo">
+      <img src="images/logo.svg" class="logo" alt="logo">
       <nav>
         <ul class="nav_links">
-          <li>Features</li>
-          <li>Company</li>
+          <li class="fetaures">Features <img class="arrow" src="images/icon-arrow-down.svg"></li>
+          <ul class="dropdown_menu">
+            <li><img src="images/icon-todo.svg"> Todo List</li>
+            <li><img src="images/icon-calendar.svg"> Calendar</li>
+            <li><img src="images/icon-reminders.svg"> Reminders</li>
+            <li><img src="images/icon-planning.svg"> Planning</li>
+          </ul>
+          <li>Company <img class="arrow" src="images/icon-arrow-down.svg"></li>
           <li>Careers</li>
           <li>About</li>
         </ul>
       </nav>
-      <a href="#"><button>Login</button></a>
+      <a class="login_button">Login</a>
+      <button class="register_button">Register</button>
     </header>
+    <section>
+      <div class="content">
+        <h1>Make remote work</h1>
+        <p>Get your team in sync, no matter your location. Streamline processes, 
+        create team rituals, and watch productivity soar.</p>
+        <button class="learn_more_button">Learn more</button>
+        <div class="logos">
+        <img src="images/client-databiz.svg" alt="databiz logo">
+        <img src="images/client-audiophile.svg" id="audiophile" alt="audiophile logo">
+        <img src="images/client-meet.svg" alt="meet logo">
+        <img src="images/client-maker.svg" alt="maker logo">
+      </div>
+      </div>
+      <div class="picture">
+        <img src="images/image-hero-desktop.png" alt="image">
+      </div>
+      
+    </section>
 
-  Features
-  Company
-  Careers
-  About
-
-  Login
-  Register
-
-  Make remote work
-
-  Get your team in sync, no matter your location. Streamline processes, 
-  create team rituals, and watch productivity soar.
-
-  Learn more
   
-  <div class="attribution">
+  <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
-  </div>
+  </div> -->
 </body>
 </html>

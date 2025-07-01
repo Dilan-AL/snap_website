@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue&display=swap');
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Epilogue";
+  background-color: hsl(0, 0%, 98%);
+}
+
+
+header{
+  display: flex;
+  justify-content: flex-start;
+  padding: 20px 2%;
+  font-weight: 400;
+}
+
+.nav_links{
+  list-style: none;
+  padding-left: 40px;
+}
+
+.nav_links li{
+  display: inline-block;
+  padding: 0 15px;
+}
+
+
+.login_button{
+  background-color: hsl(0, 0%, 98%);
+  margin-left: auto;
+  border: none;
+}
+.register_button{
+  margin-left: 20px;
+}
+.register_button{
+  background-color: hsl(0, 0%, 98%);
+  border: black solid 3px;
+  border-radius: 13px;
+  padding: 8px 12px;
+  margin-top: 0;
+  transform: translateY(-10px);
+  font-size: medium;
+}
+.logo{
+  height: 30px;
+  width: 80px;
+}
+section{
+  display: flex;
+  align-content: flex-start;
+}
+.content{
+  width: 48%;
+  padding-left: 15vw;
+  padding-top: 10vh;
+}
+.picture{
+  width: 48%;
+  padding-left: 15vw;
+}
+.picture img{
+  display: flex;
+  width: 400px;
+  
+  
+}
+h1{
+  font-size: 80px;
+}
+p{
+  margin-top: 7vh;
+  font-size: larger;
+  line-height: 1.4;
+}
+
+.learn_more_button{
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  border: black 2px solid;
+  width: 10vw;
+  height: 7vh;
+  border-radius: 20px;
+  padding: 10px 20px;
+  margin-top: 5vh;
+  
+}
+.logos img{
+  margin: 10vh 10px;
+}
+
+#audiophile {
+  position: relative;
+  top: 10px;
+}
+.arrow{
+  position: relative;
+  bottom: 1px;
+  left: 1px;
+}
+.dropdown_menu {
+  z-index: 10;
+}
