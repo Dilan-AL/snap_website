@@ -42,6 +42,7 @@ header{
 .nav_links > li{
   display: inline-block;
   padding: 0 15px;
+  cursor: pointer;
 }
 
 .features-label:hover{
@@ -62,11 +63,11 @@ header{
   background-color: hsl(0, 0%, 98%);
   margin-left: auto;
   border: none;
+  cursor: pointer;
 }
+
 .register_button{
   margin-left: 20px;
-}
-.register_button{
   background-color: hsl(0, 0%, 98%);
   border: black solid 3px;
   border-radius: 13px;
@@ -74,6 +75,7 @@ header{
   margin-top: 0;
   transform: translateY(-10px);
   font-size: medium;
+  cursor: pointer;
 }
 .logo{
   height: 30px;
