@@ -16,7 +16,7 @@ header{
 }
 .sidebar{
   position: fixed;
-  display: none;
+  display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
@@ -155,13 +155,13 @@ p{
 }
 
 @media(max-width:1246px){
-  .nav_links{
+  header .nav_links{
     display: none;
   }
-  .login_button{
+  header .login_button{
     display: none;
   }
-  .register_button{
+  header .register_button{
     display: none;
   }
   .menu{
@@ -176,6 +176,35 @@ p{
   .picture img{
     width: 400px;
    align-content: center;
-}
+  
+  }
+  .sidebar .nav_links>li{
+    margin-top: 25px;
+    padding-left: 5px;
+    display: block;
+
+  }
+  .sidebar .login_button{
+    margin-left: 105px;
+    margin-top: 60px;
+    font-size: 18px;
+    display: block;
+  }
+
+  .sidebar .register_button{
+    transform: translateY(10px);
+    display: flex;
+    align-self: center;
+    margin-top: 10px;
+    padding: 12px 60px;
+    
+  }
+  .sidebar{
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.2);
+    padding-left: 0;
+  }
+  .close{
+    margin-left: auto;
+  }
 }
 
