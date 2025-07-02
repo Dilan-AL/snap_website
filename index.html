@@ -43,6 +43,7 @@
       <a class="login_button">Login</a>
       <button class="register_button">Register</button>
     </header>
+    <div class="overlay"></div>
     <div class="sidebar">
       <img class="close" src="images/icon-close-menu.svg" alt="close">
       <nav>
@@ -158,9 +159,11 @@
 
     function openSidebar(){
       document.querySelector('.sidebar').classList.add('show');
+      document.querySelector('.overlay').classList.add('show');
     }
     function closeSidebar(){
       document.querySelector('.sidebar').classList.remove('show');
+      document.querySelector('.overlay').classList.remove('show');
     }
   </script>
   <!-- <div class="attribution">
