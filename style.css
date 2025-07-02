@@ -149,12 +149,13 @@ p{
   margin-top: 10px;
   
 }
-.features:hover .dropdown_menu{
+.dropdown_menu.dropdown_menu_active{
   display: block;
 }
-.company:hover .dropdown_menu_company{
+.dropdown_menu_company.dropdown_menu_active{
   display: block;
 }
+
 .menu{
   display: none;
 }
