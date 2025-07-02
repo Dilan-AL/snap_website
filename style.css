@@ -14,6 +14,21 @@ header{
   padding: 20px 2%;
   font-weight: 400;
 }
+.sidebar{
+  position: fixed;
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  top: 0;
+  right: 0;
+  width: 250px;
+  height: 100vh;
+  justify-content: flex-start;
+  padding: 20px 2%;
+  font-weight: 400;
+  z-index: 999;
+}
 
 .nav_links{
   list-style: none;
@@ -24,6 +39,19 @@ header{
   display: inline-block;
   padding: 0 15px;
 }
+
+.features-label:hover{
+  font-weight: 600;
+}
+
+.features-label:hover{
+  font-weight: 600;
+}
+
+.company-label:hover,.careers:hover,.about:hover{
+  font-weight: 600;
+}
+
 
 
 .login_button{
@@ -52,22 +80,21 @@ section{
   align-content: flex-start;
 }
 .content{
-  width: 48%;
-  padding-left: 15vw;
+  width: 500px;
+  margin-left: 15%;
   padding-top: 10vh;
 }
 .picture{
-  width: 48%;
-  padding-left: 15vw;
+  width: 500px;
 }
 .picture img{
   display: flex;
   width: 400px;
-  
-  
+  margin-left: 20%;
 }
+
 h1{
-  font-size: 60px;
+  font-size: 80px;
   font-weight: bolder;
   margin-top: 25px;
 }
@@ -82,8 +109,8 @@ p{
   color: white;
   font-weight: bold;
   border: black 2px solid;
-  width: 10vw;
-  height: 7vh;
+  width: 170px;
+  height: 50px;
   border-radius: 20px;
   padding: 10px 20px;
   margin-top: 5vh;
@@ -100,19 +127,19 @@ p{
 .arrow{
   position: relative;
   bottom: 1px;
-  left: 1px;
+  left: 3px;
 }
-.dropdown_menu {
+.dropdown_menu ,.dropdown_menu_company{
   display: none;
   position: absolute;
   padding: 10px 15px;
   margin-left: -40px;
-  margin-top: 20px;
+  margin-top: 10px;
   border-radius: 15px;
   box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
 }
 
-.dropdown_menu li{
+.dropdown_menu li,.dropdown_menu_company li{
   list-style: none;
   margin-top: 10px;
   
@@ -120,3 +147,35 @@ p{
 .features:hover .dropdown_menu{
   display: block;
 }
+.company:hover .dropdown_menu_company{
+  display: block;
+}
+.menu{
+  display: none;
+}
+
+@media(max-width:1246px){
+  .nav_links{
+    display: none;
+  }
+  .login_button{
+    display: none;
+  }
+  .register_button{
+    display: none;
+  }
+  .menu{
+    display: flex;
+    margin-left: auto;
+    width: 26;
+  }
+  section{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .picture img{
+    width: 400px;
+   align-content: center;
+}
+}
+
